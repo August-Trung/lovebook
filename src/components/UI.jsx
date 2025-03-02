@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const pictures = [
 	"test",
 	"test",
-	"3",
+	"test",
 	"4",
 	"5",
 	"6",
