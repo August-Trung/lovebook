@@ -1,4 +1,5 @@
-# r3f-animated-book-slider-final
+# My Love Book
+
 Build from the awesome tutorial by wawa sensei
 
 [Video tutorial](https://youtu.be/b7a_Y1Ja6js)
