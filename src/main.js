@@ -1,17 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const audio = document.getElementById("bgMusic");
 
-	// Try playing audio automatically (may be blocked)
-	audio.play().catch(() => {
-		console.log("Autoplay blocked, waiting for user interaction...");
+	function playAudio() {
+		audio
+			.play()
+			.then(() => {
+				console.log("Audio started playing");
+			})
+			.catch((err) => {
+				console.log("Autoplay bị chặn, cần user tương tác!");
+			});
+	}
 
-		// Wait for user interaction
-		document.body.addEventListener(
-			"click",
-			function () {
-				audio.play();
-			},
-			{ once: true }
-		); // Ensures it only runs once
-	});
+	// Tự động thử phát nhạc khi tải trang
+	playAudio();
+
+	// Dự phòng: Chờ user click nếu autoplay bị chặn
+	document.body.addEventListener("click", playAudio, { once: true });
+	document.body.addEventListener("touchstart", playAudio, { once: true });
 });
