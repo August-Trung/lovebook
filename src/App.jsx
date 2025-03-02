@@ -4,11 +4,13 @@ import { Suspense } from "react";
 import { Experience } from "./components/Experience";
 import { UI } from "./components/UI";
 import BackgroundVideo from "./components/BackgroundVideo";
+import BackgroundMusic from "./components/BackgroundMusic";
 
 function App() {
 	return (
 		<>
 			<BackgroundVideo />
+			<BackgroundMusic />
 			<UI />
 			<Loader />
 			<Canvas shadows camera={{ position: [-0.5, 1, 4], fov: 45 }}>
