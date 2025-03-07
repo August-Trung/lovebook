@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
-	overflow-x: hidden !important;
+	/* overflow-x: hidden !important; */
 }
 
 #root {
@@ -12,19 +13,4 @@
 
 body {
 	margin: 0;
-}
-
-.outline-text {
-	-webkit-text-stroke: 1px white;
-}
-
-#bgVideo {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	object-fit: cover;
-	z-index: -1;
-	-webkit-user-select: none;
 }

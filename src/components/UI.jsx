@@ -50,10 +50,7 @@ export const UI = () => {
 
 	return (
 		<>
-			<main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
-				<a className="logo pointer-events-auto mt-10 ml-10" href="#">
-					<img className="w-20" src="/logo-augusttrung.png" />
-				</a>
+			<main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-end flex-col">
 				<div className="w-full overflow-auto pointer-events-auto flex justify-center">
 					<div className="overflow-auto flex flex-wrap justify-center items-center gap-2 sm:gap-4 max-w-full p-4 sm:p-10">
 						<button
