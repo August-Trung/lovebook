@@ -23,7 +23,7 @@ const Heart = styled.div`
 	animation: ${float} ${(props) => props.duration}s linear infinite;
 	left: ${(props) => props.left}%;
 	animation-delay: ${(props) => props.delay}s;
-	z-index: 10;
+	z-index: 0;
 
 	&:before,
 	&:after {
@@ -50,7 +50,7 @@ const FloatingHearts = ({ count = 15 }) => {
 		const colors = ["#ff69b4", "#ffb6c1", "#ffc0cb", "#ff1493", "#db7093"];
 		const color = colors[Math.floor(Math.random() * colors.length)];
 		const left = Math.random() * 100;
-		const duration = Math.random() * 15 + 5	;
+		const duration = Math.random() * 15 + 5;
 		const delay = Math.random() * 10;
 
 		return (

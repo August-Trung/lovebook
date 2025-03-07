@@ -3,22 +3,22 @@ import { useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const pictures = [
-	"test",
-	"test",
-	"test",
-	"4",
-	"5",
-	"6",
-	"7",
-	"8",
-	"9",
-	"10",
-	"11",
-	"12",
-	"13",
-	"14",
-	"15",
-	"16",
+	"1",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
+	"2",
 ];
 
 export const pageAtom = atom(0);

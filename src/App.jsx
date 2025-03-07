@@ -120,12 +120,6 @@ function App() {
 		{ size: 180, x: "15%", y: "75%", delay: 0.9 },
 	];
 
-	useEffect(() => {
-		if (modelViewerRef.current) {
-			// Any model-viewer specific setup
-		}
-	}, []);
-
 	return (
 		<AppContainer>
 			<UI />
@@ -135,7 +129,7 @@ function App() {
 				initial={{ opacity: 0, y: -50 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1 }}>
-				Chúc mừng ngày 8/3, vợ iu cụa anhhh!
+				Ngày 8/3 vui vẻ nhé vợ yêu của anh ❤
 			</Title>
 			<Canvas shadows camera={{ position: [-0.5, 1, 4], fov: 45 }}>
 				<group position-y={0}>
@@ -144,6 +138,7 @@ function App() {
 					</Suspense>
 				</group>
 			</Canvas>
+
 			<StarContainer>{stars}</StarContainer>
 			{circles.map((circle, index) => (
 				<DecorationCircle
